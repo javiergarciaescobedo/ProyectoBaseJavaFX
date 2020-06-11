@@ -16,3 +16,5 @@ del paquete en el que se encuentre la clase principal (Main) o el lanzador (Laun
 `mainClassName = 'ProyectoBaseJavaFX.Main'`
 
 `attributes 'Main-Class': 'ProyectoBaseJavaFX.Launcher'`
+
+Recuerda también editar o borrar el archivo **README.md** para que no se incluyan estas indicaciones en el nuevo proyecto 
