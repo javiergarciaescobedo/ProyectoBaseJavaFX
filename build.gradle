@@ -28,6 +28,17 @@ jar {
 }
 
 dependencies {
+    // Para que se descargue automáticamente el javadoc de JavaFX. No funciona
+    // la descarga directamente desde NetBeans con las librerías de JavaFX
+    compileOnly "org.openjfx:javafx-base:$javafx.version:javadoc"
+    compileOnly "org.openjfx:javafx-base:$javafx.version:sources"
+    compileOnly "org.openjfx:javafx-controls:$javafx.version:javadoc"
+    compileOnly "org.openjfx:javafx-controls:$javafx.version:sources"
+    compileOnly "org.openjfx:javafx-fxml:$javafx.version:javadoc"
+    compileOnly "org.openjfx:javafx-fxml:$javafx.version:sources"
+    compileOnly "org.openjfx:javafx-graphics:$javafx.version:javadoc"
+    compileOnly "org.openjfx:javafx-graphics:$javafx.version:sources"
+    
     // Para que el archivo ejecutable JAR sea multiplataforma
     runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:win"
     runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:linux"
